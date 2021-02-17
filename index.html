@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Referencias</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="w3.css?v=0">
+    <script src="w3codecolor.js"></script>
+    <script src="st.js"></script>
+</head>
+<style>
+@charset 'utf-8';
+
+body{font-family: 'Trebuchet MS'; font-size: 15px; background: #fff; color: #000;}
+</style>
+<body onload="inicio()">
+    <div style="max-width: 360px; float: left;">
+        <ul class="w3-ul">
+            <h2>st.js</h2>
+            <li onclick="st.escondermostrar('#inicio');document.getElementById('referencia').style.display='none'" class="w3-button">Inicío</li><br>
+            <li onclick="st.escondermostrar('#referencia');document.getElementById('inicio').style.display='none'" class="w3-button">Referências</li><br>
+        </ul>
+    </div>
+
+    <div class="w3-container" style="float: left;" id="inicio">
+        <h1>ST.JS Tutorial</h1>
+        <p>W3.JS é uma biblioteca JavaScript projetada para simplificar projetos de desenvolvimento web:</p>
+        <div class="w3-panel w3-light-gray">
+            <p>Fácil de aprender e fácil de usar.</p>
+            <p>Projetado para desenvolvimento rápido de aplicativos.</p>
+            <p>Projetado para todos os dispositivos: PC, Tablet e Celular.</p>
+            <p>Grátis para usar. Sem licenças.</p>
+        </div>
+    <hr>
+        <h1>O que o ST.JS pode fazer?</h1>
+        <p>Abaixo está uma lista de algumas das coisas que o ST.JS pode fazer:</p>
+        <ul>
+            <li class="w3-hover-light-gray">Executar apresentação de slides</li>
+            <li class="w3-hover-light-gray">Incluir (importar) HTML em HTML</li>
+            <li class="w3-hover-light-gray">(Sorteia) - Classifique o conteúdo em qual quer documento HTML</li>
+            <li class="w3-hover-light-gray">Filtre qualquer elemento HTML</li>
+            <li class="w3-hover-light-gray">Exibe qualquer elemento JavaScript em HTML</li>
+            <li class="w3-hover-light-gray">Olculta e mostra qualquer elemento HTML</li>
+            <li class="w3-hover-light-gray">Adicionar e remove classe em qualquer elemento HTML</li>
+            <li class="w3-hover-light-gray">Adicionar CSS em qualquer elemento HTML</li>
+        </ul>
+    <hr>
+        <h1>Como</h1>
+        <p>ST.JS é muito fácil de usar.</p>
+        <p>Basta adicionar um link para st.js em sua página da web:</p>
+        <div class="w3-panel w3-light-gray">
+            <h4>Exemplo:</h4>
+            <div class="w3-code htmlHigh notranslate">
+                &lt;script src="st.js"&gt;&lt;/script&gt;
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container" style="float: left; display: none;" id="referencia">
+        <table class="w3-table w3-striped w3-bordered">
+            <tr>
+                <th>Função</th>
+                <th>Descrição</th>
+                <th>Exemplo</th>
+            </tr>
+            <tr>
+                <td>st.esconder | st.mostrar | st.escondermostrar</td>
+                <td>Oculta elemento HTML | Mostrar elemento HTML | Troca de oculto para visivel</td>
+                <td onclick="window.location.href='esconderMostrar.html'" class="w3-button w3-blue">Ver</td>
+            </tr>
+            <tr>
+                <td>st.addEstilo</td>
+                <td>Adicionando estilo css no elemento</td>
+                <td onclick="window.location.href='addEstilo.html'" class="w3-button w3-blue">Ver</td>
+            </tr>
+            <tr>
+                <td>st.addClasse | st.removeClasse | st.addRemoveClasse</td>
+                <td>Adicionando classe no elemento | Removendo a Classe | Troca Add e Remove Classe</td>
+                <td onclick="window.location.href='addClasse.html'" class="w3-button w3-blue">Ver</td>
+            </tr>
+            <tr>
+                <td>st.filtrarHTML</td>
+                <td>Filtrando os elemento HTML</td>
+                <td onclick="window.location.href='filtrarHTML.html'" class="w3-button w3-blue">Ver</td>
+            </tr>
+            <tr>
+                <td>st-incluir-html</td>
+                <td>Incluir documento HTML dentro do HTML (include)</td>
+                <td onclick="window.location.href='incluirHTML.html'" class="w3-button w3-blue">Ver</td>
+            </tr>
+            <tr>
+                <td>st.organizarHTML</td>
+                <td>Organizador de elemento</td>
+                <td onclick="window.location.href='organizarHTML.html'" class="w3-button w3-blue">Ver</td>
+            </tr>
+            <tr>
+                <td>st.slideshow</td>
+                <td>Slide show (img e elemento) </td>
+                <td onclick="window.location.href='slideshow.html'" class="w3-button w3-blue">Ver</td>
+            </tr>
+        </table>
+    </div>
+    <footer class="w3-padding-16">
+        <p>Script Tutoriais | Luiz Bruno | LUMATECH &copy; - 2021 2021</p>
+    </footer>
+</body>
+<script>
+//
+w3CodeColor();
+//
+</script>
+</html>

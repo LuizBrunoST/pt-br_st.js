@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <title>Esconder/Mostrar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="st.js?v=3"></script>
+    <link rel="stylesheet" href="w3.css">
+</head>
+<body>
+    <button onclick="st.esconder('#esconderId')">Esconder ID</button>
+    <div id="esconderId">Minha ID</div>
+<hr>
+    <button onclick="st.mostrar('#mostarId')">Mostrar ID</button>
+    <div id="mostarId" style="display: none;">Minha ID</div>
+<hr>
+    <button onclick="st.escondermostrar('#viceVersaId')">Esconder e Mostrar ID</button>
+    <div id="viceVersaId">Minha ID</div>
+
+<hr>
+
+    <button onclick="st.esconder('.esconderClass')">Esconder Class</button>
+    <div class="esconderClass">Minha Class</div>
+<hr>
+    <button onclick="st.mostrar('.mostarClass')">Mostrar Class</button>
+    <div class="mostarClass" style="display: none;">Minha Class</div>
+<hr>
+    <button onclick="st.escondermostrar('.viceVersaClass')">Esconder e Mostrar Class</button>
+    <div class="viceVersaClass">Minha Class</div>
+
+<hr>
+
+    <button onclick="st.esconder('p')">Esconder Tag</button>
+    <p>Minha Tag</p>
+<hr>
+    <button onclick="st.mostrar('code')">Mostrar Tag</button>
+    <code style="display: none;">Minha Tag</code>
+<hr>
+    <button onclick="st.escondermostrar('marquee')">Esconder e Mostrar Tag</button>
+    <marquee>Minha Tag</marquee>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>filtrar HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="st.js"></script>
+    <link rel="stylesheet" href="w3.css">
+</head>
+<body>
+    <input class="w3-input" oninput="st.filtrarHTML('#id01', '.item', this.value)" placeholder="Pesquise por nomes..">
+    <table id="id01" class="w3-table w3-striped w3-bordered">
+        <tr>
+            <th>Cliente</th>
+            <th>Cidade</th>
+            <th>Estado</th>
+        </tr>
+        <tr class="item">
+            <td>Luiz Bruno</td>
+            <td>Tapejara</td>
+            <td>Paraná</td>
+        </tr>
+        <tr class="item">
+            <td>Francisco Albert</td>
+            <td>Cianorte </td>
+            <td>Paraná</td>
+        </tr>
+    </table>
+</body>
+</html>

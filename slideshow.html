@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>slideshow</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="w3.css">
+    <script src="st.js"></script>
+</head>
+<body>
+    <img class="natureza" alt="img1" src="1014.png" width="300">
+    <img class="natureza" alt="img2" src="1023.png" width="300">
+    <img class="natureza" alt="img3" src="1024.png" width="300">
+
+    <p>
+        <button class="w3-button" onclick="meuShow.anterior()">anterior <span class="w3-tag"><<</span></button>
+        <button class="w3-button" onclick="meuShow.proximo()">próximo <span class="w3-tag">>></span></button>
+    </p>
+
+    <script>
+    //Para imagem e tambem Tag 
+    meuShow = st.slideshow(".natureza", 0)
+
+
+
+    //Atenção coloque esse separando do script
+    st.slideshow(".cidade")
+    </script>
+
+    <h1 class="cidade">Cianorte</h1>
+    <h1 class="cidade">Tapejara</h1>
+    <h1 class="cidade">Umuarama</h1>
+</body>
+</html>

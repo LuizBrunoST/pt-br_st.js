@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>addClasse</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="w3.css">
+    <script src="st.js"></script>
+<script>
+function view(){
+    var content = document.getElementById("codigo").value;
+    var iframe = document.getElementById("view");
+
+    iframe = (iframe.contentWindow) ? iframe.contentWindow : (iframe.contentDocument.document) ? iframe.contentDocument.document : iframe.contentDocument;
+    iframe.document.open();
+    iframe.document.write(content);
+    iframe.document.close;
+
+    return false;
+}
+runCode();
+</script>
+
+<style>
+body{background: #fff; color: #000; font-family: 'Trebuchet MS';}
+    .marcado{background-color: orange; font-size: 20px; padding: 16px; color: white;}
+    #codigo{resize: none;}
+    #codigo, #view{width: 100%; height: 360px; border: 0;}
+</style>
+</head>
+<body>
+    <div class="w3-container">
+        <h1>Referências</h1>
+        <ul class="w3-ul">
+            <li>st.addClasse('<i>.seletor</i>', 'classe que você queira add')</li>
+            <li>st.removeClasse('<i>.seletor</i>', 'classe que você queira remover')</li>
+            <li>st.addRemoveClasse('<i>.seletor</i>', 'classe que você queira add e remover')</li>
+        </ul>
+    </div>
+    <button onclick="st.addClasse('.classe', 'marcado')" class="w3-button w3-blue w3-round">Add classe</button>
+    <div class="classe">Adicionando uma classe "marcado"</div>
+<hr>
+    <button onclick="st.removeClasse('.classe', 'marcado')" class="w3-button w3-blue w3-round">remove classe</button>
+    <div class="classe marcado">Removendo a classe "marcado"</div>
+<hr>
+    <button onclick="st.addRemoveClasse('.classe', 'marcado')" class="w3-button w3-blue w3-round">Add e remove classe</button>
+    <div class="classe marcado">Adicionando e removendo a classe "marcado"</div>
+
+    <div class="w3-third">
+        <h4>Código Fonte</h4>
+        <textarea id="codigo">
+<link rel="stylesheet" type="text/css" href="w3.css">
+<script src="st.js"></script>
+    <button onclick="st.addClasse('.classe', 'marcado')" class="w3-button w3-blue w3-round">Add classe</button>
+    <div class="classe">Adicionando uma classe "marcado"</div>
+<hr>
+    <button onclick="st.removeClasse('.classe', 'marcado')" class="w3-button w3-blue w3-round">remove classe</button>
+    <div class="classe marcado">Removendo a classe "marcado"</div>
+<hr>
+    <button onclick="st.addRemoveClasse('.classe', 'marcado')" class="w3-button w3-blue w3-round">Add e remove classe</button>
+    <div class="classe marcado">Adicionando e removendo a classe "marcado"</div>
+        </textarea>
+    </div>
+    <div class="w3-third">
+        <button class="w3-blue w3-button w3-round" onclick="view()">Visualizar</button>
+        <h4>Visulisador</h4>
+        <iframe id="view"></iframe>
+    </div>
+</body>
+</html>
