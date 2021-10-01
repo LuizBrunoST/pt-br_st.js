@@ -35,7 +35,7 @@ Seletores **st.js**
 st.ação(*seletor*)
 <ul>
   <li>A ação () é realizada no (s) elemento (s) selecionado (s)</li>
-  <li>O ( <i>seletor</i> ) seleciona o (s) elemento (s) HTML</li>
+  <li>O ( *seletor* ) seleciona o (s) elemento (s) HTML</li>
 </ul>
 Exemplo:
 
