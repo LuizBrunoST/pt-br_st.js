@@ -23,8 +23,9 @@ Abaixo está uma lista de algumas das coisas que o **st.js** pode fazer:
 **st.js** é muito fácil de usar.
 
 Basta adicionar um link para **st.js** em sua página da web:
-
+```html
 <script src="js/st.js"></script>
+```
 
 # Seletores st.js
 
