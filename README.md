@@ -24,7 +24,7 @@ Abaixo está uma lista de algumas das coisas que o **st.js** pode fazer:
 
 Basta adicionar um link para **st.js** em sua página da web:
 ```html
-<script src="js/st.js"></script>
+<script src="js/st-lumatech_1.0.min.js"></script>
 ```
 
 # Seletores st.js
