@@ -63,3 +63,6 @@ Seletor:
 ("[href]") - Seleciona todos os elementos com um atributo href<br>
 ("a[target=_blank]") - Seleciona todos os elementos < a > com um valor de atributo de destino(target) igual a "_blank"<br>
 ("p:nth-child(even)") - Seleciona todos os elementos pares < p ><br>
+
+# Demo
+[DEMO](https://luizbrunost.github.io/pt-br_st.js/)
