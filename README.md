@@ -26,6 +26,10 @@ Basta adicionar um link para **st.js** em sua página da web:
 ```html
 <script src="lib/build/st-lumatech_1.0.min.js"></script>
 ```
+ou<br>
+```html
+<script src="https://luizbrunost.github.io/pt-br_st.js/lib/build/st-lumatech_1.0.min.js"></script>
+```
 
 # Seletores st.js
 
